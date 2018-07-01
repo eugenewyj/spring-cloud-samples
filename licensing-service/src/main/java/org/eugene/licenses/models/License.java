@@ -10,6 +10,7 @@ public class License {
     private String organizationId;
     private String productName;
     private String licenseType;
+    private String comment;
 
     public License withId(String id) {
         this.setId(id);
@@ -28,6 +29,11 @@ public class License {
 
     public License withLicenseType(String licenseType) {
         this.setLicenseType(licenseType);
+        return this;
+    }
+
+    public License withComment(String comment) {
+        this.setComment(comment);
         return this;
     }
 }
