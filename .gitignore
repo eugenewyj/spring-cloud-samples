@@ -13,3 +13,4 @@ buildNumber.properties
 
 # 忽略idea文件
 .idea
+*.iml
