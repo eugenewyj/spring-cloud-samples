@@ -3,4 +3,4 @@ MAINTAINER Eugene Wang <eugenewyj79@gmail.com>
 
 # Add the service itself
 ARG JAR_FILE
-COPY ${JAR_FILE} /usr/share/configserver/app.jar
+COPY ${JAR_FILE} /usr/share/eurekaserver/app.jar
