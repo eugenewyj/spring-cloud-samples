@@ -69,6 +69,7 @@
                     <tag>${project.version}</tag>
                     <buildArgs>
                         <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                        <CONFIG_DIR>target/classes/config</CONFIG_DIR>
                     </buildArgs>
                 </configuration>
                 <dependencies>

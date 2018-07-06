@@ -1,5 +1,12 @@
 server:
   port: 8888
+
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    org.eugene: DEBUG
+
 spring:
   profiles:
     active: native
@@ -7,4 +14,6 @@ spring:
     config:
       server:
         native:
-          searchLocations: file:///Users/eugene/Workspace/Eugene/spring-cloud-samples/config-server/src/main/resources/config/licensingservice
+          searchLocations: file:///Users/eugene/Workspace/Eugene/spring-cloud-samples/config-server/src/main/resources/config/licensingservice,
+                          file:///Users/eugene/Workspace/Eugene/spring-cloud-samples/config-server/src/main/resources/config/organizationservice,
+                          file:///usr/share/configserver/config/licensingservice,file:///usr/share/configserver/config/organizationservice
